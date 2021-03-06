@@ -37,28 +37,28 @@ public class Mydbhelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-       try{
-            Toast.makeText(context, "onCreate is called", Toast.LENGTH_LONG).show();
-            db.execSQL(CREATE_TABLE1);
-            db.execSQL(CREATE_TABLE2);
-        }
-        catch (Exception e){
-            Toast.makeText(context, "Exception :"+e, Toast.LENGTH_LONG).show();
-        }
+//       try{
+//            Toast.makeText(context, "onCreate is called", Toast.LENGTH_LONG).show();
+//            db.execSQL(CREATE_TABLE1);
+//            db.execSQL(CREATE_TABLE2);
+//        }
+//        catch (Exception e){
+//            Toast.makeText(context, "Exception :"+e, Toast.LENGTH_LONG).show();
+//        }
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        try {
-            Toast.makeText(context, "onUpgrade is called", Toast.LENGTH_LONG).show();
-            db.execSQL(DROP_TABLE1);
-            db.execSQL(DROP_TABLE2);
-            onCreate(db);
-        }
-        catch (Exception e){
-            Toast.makeText(context, "Exception :"+e, Toast.LENGTH_LONG).show();
-        }
+//        try {
+//            Toast.makeText(context, "onUpgrade is called", Toast.LENGTH_LONG).show();
+//            db.execSQL(DROP_TABLE1);
+//            db.execSQL(DROP_TABLE2);
+//            onCreate(db);
+//        }
+//        catch (Exception e){
+//            Toast.makeText(context, "Exception :"+e, Toast.LENGTH_LONG).show();
+//        }
    }
 
 
